@@ -204,6 +204,7 @@ GEM
       io-console (~> 0.5)
     rexml (3.3.6)
       strscan
+    rolify (6.0.1)
     rubocop (1.65.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -294,6 +295,7 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.2.1)
+  rolify
   rubocop-rails-omakase
   selenium-webdriver
   sprockets-rails
