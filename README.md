@@ -2,37 +2,14 @@
 
 <a name="readme-top"></a>
 
-<!--
-CÓMO USAR:
-Este es un ejemplo de cómo puedes dar instrucciones sobre la configuración de tu proyecto localmente.
-
-Modifica este archivo para que coincida con tu proyecto y elimina secciones que no apliquen.
-
-SECCIONES REQUERIDAS:
-- Tabla de Contenidos
-- Acerca del Proyecto.
-  - Construido Con
-  - Demostración en Vivo
-- Empezando
-- Autores
-- Características Futuras
-- Contribuciones
-- Muestra tu apoyo
-- Agradecimientos.
-- Licencia
-
-¡Después de terminar, por favor elimina todos los comentarios e instrucciones!
--->
 
 <div align="center">
 
- <!--  <img src="murple_logo.png" alt="logo" width="140"  height="auto" /> -->
+
   <br/>
 
 </div>
 
-
-<!-- DESCRIPCIÓN DEL PROYECTO. -->
 
 # Proyecto LudoApp 
 
@@ -74,7 +51,7 @@ Ruby on Rails
   </ul>
 </details>
 
-<!-- Características -->
+
 
 ### Características Clave <a name="key-features"></a>
 
@@ -83,10 +60,7 @@ Ruby on Rails
 - **Simplicidad**
 - **Claridad**
 - **Accesibilidad**
-<!-- - **Responsividad**
-- **Rendimiento** -->
 
-<!-- EMPEZANDO -->
 
 ## 💻 Empezando <a name="getting-started"></a>
 
@@ -105,9 +79,3 @@ Para ejecutar este proyecto necesitas:
 
 - Ruby on Rails
 - RSpec
-
-<!--
-Ejemplo de comando:
-
-```sh
- gem install rails
