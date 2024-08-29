@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  email: MyString
+  progreso: 1
+  alertas: MyString
+  comportamiento: MyString
+  rol: MyString
+
+two:
+  nombre: MyString
+  email: MyString
+  progreso: 1
+  alertas: MyString
+  comportamiento: MyString
+  rol: MyString
