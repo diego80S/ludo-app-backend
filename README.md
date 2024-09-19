@@ -47,7 +47,7 @@ Ruby on Rails
 <details>
 <summary>Base de Datos</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://www.sqlite.org/">Sqlite</a></li>
   </ul>
 </details>
 
