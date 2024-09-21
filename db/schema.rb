@@ -10,15 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_08_29_020609) do
+ActiveRecord::Schema[7.2].define(version: 2024_09_20_023228) do
+  create_table "alertas", force: :cascade do |t|
+    t.integer "tipo"
+    t.datetime "fecha_inicio"
+    t.datetime "fecha_final"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "usuario_id", null: false
+    t.index ["usuario_id"], name: "index_alertas_on_usuario_id"
+  end
+
+  create_table "comportamientos", force: :cascade do |t|
+    t.integer "tipo"
+    t.string "descripcion"
+    t.datetime "fecha"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "usuario_id", null: false
+    t.index ["usuario_id"], name: "index_comportamientos_on_usuario_id"
+  end
+
+  create_table "progresos", force: :cascade do |t|
+    t.integer "paso"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "usuario_id", null: false
+    t.index ["usuario_id"], name: "index_progresos_on_usuario_id"
+  end
+
   create_table "usuarios", force: :cascade do |t|
     t.string "nombre"
-    t.string "email"
-    t.integer "progreso"
-    t.string "alertas"
-    t.string "comportamiento"
-    t.string "rol"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_foreign_key "alertas", "usuarios"
+  add_foreign_key "comportamientos", "usuarios"
+  add_foreign_key "progresos", "usuarios"
 end

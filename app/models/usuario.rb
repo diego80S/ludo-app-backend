@@ -1,14 +1,10 @@
 class Usuario < ApplicationRecord
- 
-    validates :nombre, presence: true
-    validates :email, presence: true, uniqueness: true
-    validates :progreso, numericality: { only_integer: true }
+    validates :nombre, presence: true, uniqueness: true
+    # validates :email, presence: true, uniqueness: true
+    # validates :progreso, numericality: { only_integer: true }
+    has_secure_password # Esto añade la capacidad de gestionar contraseñas seguras con bcrypt
 
-    def admin?
-        rol == 'admin'
-    end
-    
-    def en_tratamiento?
-        rol == 'tratamiento'
-    end
+    has_many :progresos
+    has_many :comportamientos
+    has_many :alertas
 end
