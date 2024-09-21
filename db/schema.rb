@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_09_20_023228) do
+ActiveRecord::Schema[7.2].define(version: 2024_09_21_135729) do
   create_table "alertas", force: :cascade do |t|
     t.integer "tipo"
     t.datetime "fecha_inicio"
@@ -44,6 +44,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_20_023228) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "email"
   end
 
   add_foreign_key "alertas", "usuarios"
