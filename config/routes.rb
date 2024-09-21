@@ -15,6 +15,11 @@ Rails.application.routes.draw do
     namespace :v1 do
       post 'register', to: 'auth#register'
       post 'login', to: 'auth#login'
+      # get  'index', to: 'usuarios#index'
+      resources :usuarios
+      resources :comportamientos
+      resources :progresos
+      resources :recordatorios
     end
   end
   

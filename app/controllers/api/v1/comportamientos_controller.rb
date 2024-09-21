@@ -1,13 +1,16 @@
 class Api::V1::ComportamientosController < ApplicationController
     def index
-        comporta 
+        usuario =  Usuario.find(params[:id])
+        comportamientos = usuario.comportamientos
 
+        if !comportamientos.empty?
+            comportamientos.each do |comportamiento|
+                render json: comportamiento
+            end
+        else
+            render json: "no se encontro ningun comportamiento asociado a este usuario"
+        end
     end
 
-    private
-
-    def usuario_actual
-
-    end
-
+   
 end

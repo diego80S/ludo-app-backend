@@ -23,6 +23,6 @@ class Api::V1::AuthController < ApplicationController
 
     # Método privado para permitir solo los parámetros requeridos
     def user_params
-        params.require(:usuario).permit(:nombre, :password)
+        params.require(:usuario).permit(:nombre, :email, :password)
     end
 end
