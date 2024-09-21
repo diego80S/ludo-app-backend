@@ -6,5 +6,5 @@ class Usuario < ApplicationRecord
 
     has_many :progresos
     has_many :comportamientos
-    has_many :alertas
+    has_many :recordatorios
 end
