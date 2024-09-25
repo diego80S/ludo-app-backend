@@ -18,8 +18,5 @@ class Api::V1::ComportamientosController < ApplicationController
     #     # comportamientos = usuario.comportamientos
 
     #     render json: usuarios
-    # end
-
-
-   
+    # end   
 end
