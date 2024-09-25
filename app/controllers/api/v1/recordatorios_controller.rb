@@ -5,7 +5,7 @@ class Api::V1::RecordatoriosController < ApplicationController
 
         if !recordatorios.empty?
             recordatorios.each do |alerta|
-                render json: alerta.tipo
+                render json: alerta
             end
         else
             render json: "no se encontro ningun alerta asociado a este usuario"

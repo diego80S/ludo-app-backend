@@ -5,7 +5,7 @@ class Api::V1::ProgresosController < ApplicationController
 
         if progresos
             progresos.each do |progreso|
-                render json: progreso.paso
+                render json: progreso
             end
         else
             render json: "no se encontro ningun progreso asociado a este usuario"
