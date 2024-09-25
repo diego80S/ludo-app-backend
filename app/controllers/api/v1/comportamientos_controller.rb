@@ -12,5 +12,14 @@ class Api::V1::ComportamientosController < ApplicationController
         end
     end
 
+    # def index
+    #     usuarios =  Usuario.all
+    #     # usuario =  Usuario.find(params[:id])
+    #     # comportamientos = usuario.comportamientos
+
+    #     render json: usuarios
+    # end
+
+
    
 end
