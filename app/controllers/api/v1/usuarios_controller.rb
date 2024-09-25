@@ -45,15 +45,6 @@ class Api::V1::UsuariosController < ApplicationController
 
     def usuario_params
         params.require(:usuario).permit(:nombre) # Permite el nombre como parámetro
-    end
-   
-    def index
-        usuarios = Usuario.all
-        if usuarios.empty?
-            render json: "No hay usuarios registrados"
-        else
-            render json: usuarios
-        end
-    end
+    end     
    
 end
